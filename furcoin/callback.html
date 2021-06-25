@@ -1,0 +1,11 @@
+<html>
+    <body>
+    </body>
+    <script>
+        var url = window.location.href
+        var arr = url.split("/");
+        var currentUrl = arr[0] + "//" + arr[2]
+        let newUrl = currentUrl + "/#/auth?" + window.location.href.substring((window.location.origin+window.location.pathname).length+1);
+        window.location.href = newUrl;
+    </script>
+</html>
